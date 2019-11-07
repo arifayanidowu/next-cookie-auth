@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "server": "node server.js",
+    "build": "next build",
+    "heroku-postbuild": "set NODE_ENV=production && next build"
   },
   "keywords": [],
   "author": "",
